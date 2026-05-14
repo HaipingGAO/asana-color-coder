@@ -4,7 +4,7 @@ const statusDot = document.getElementById('statusDot');
 const statusText = document.getElementById('statusText');
 const ghLink = document.getElementById('ghLink');
 
-const GITHUB_REPO = 'https://github.com/YOUR_USERNAME/asana-color-coder';
+const GITHUB_REPO = 'https://github.com/HaipingGAO/asana-color-coder';
 const RULES_URL   = 'https://https://raw.githubusercontent.com/HaipingGAO/asana-color-coder/refs/heads/main/rules.json';
 ghLink.href = GITHUB_REPO + '/edit/main/rules.js';
 
