@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      width: 240px; padding: 16px;
+      background: #ffffff; color: #1a1a1a;
+    }
+    .title { font-size: 14px; font-weight: 600; }
+    .subtitle { font-size: 11px; color: #888; margin-top: 2px; margin-bottom: 14px; }
+    .toggle-row {
+      display: flex; align-items: center; justify-content: space-between;
+      background: #f5f5f5; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px;
+    }
+    .toggle-label { font-size: 13px; font-weight: 500; }
+    .switch { position: relative; width: 38px; height: 22px; }
+    .switch input { display: none; }
+    .slider {
+      position: absolute; inset: 0; background: #ccc;
+      border-radius: 22px; cursor: pointer; transition: 0.2s;
+    }
+    .slider:before {
+      content: ""; position: absolute;
+      width: 16px; height: 16px; left: 3px; bottom: 3px;
+      background: white; border-radius: 50%; transition: 0.2s;
+    }
+    input:checked + .slider { background: #B09FE8; }
+    input:checked + .slider:before { transform: translateX(16px); }
+    .status-row {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 11px; color: #888; margin-bottom: 12px;
+    }
+    .status-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: #ccc;
+    }
+    .status-dot.live { background: #28A745; }
+    .status-dot.cached { background: #FFC107; }
+    .legend-title {
+      font-size: 11px; font-weight: 600; color: #888;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 4px 0; font-size: 12px; color: #333;
+    }
+    .swatch { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+    .footer { margin-top: 12px; font-size: 10px; color: #bbb; text-align: center; }
+    a { color: #B09FE8; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="title">🎨 Asana Color Coder</div>
+  <div class="subtitle">Swim lane card colors · v2.0</div>
+
+  <div class="toggle-row">
+    <span class="toggle-label">Color coding</span>
+    <label class="switch">
+      <input type="checkbox" id="toggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="status-row">
+    <div class="status-dot" id="statusDot"></div>
+    <span id="statusText">Checking for updates...</span>
+  </div>
+
+  <div class="legend-title">Project Legend</div>
+  <div class="legend-item"><div class="swatch" style="background:#C8C8C8;border-left:3px solid #888"></div> Others/Janitoring</div>
+  <div class="legend-item"><div class="swatch" style="background:#B09FE8;border-left:3px solid #7B6BC8"></div> Platform 2.0 launch</div>
+  <div class="legend-item"><div class="swatch" style="background:#FFCA8A;border-left:3px solid #E07800"></div> RevOps 2026</div>
+  <div class="legend-item"><div class="swatch" style="background:#C8EEFF;border-left:3px solid #4A90D9"></div> Steph's Linkedin Webinar</div>
+  <div class="legend-item"><div class="swatch" style="background:#FFFAC8;border-left:3px solid #D4A800"></div> Summer PD</div>
+  <div class="legend-item"><div class="swatch" style="background:#A8EFCC;border-left:3px solid #28A745"></div> Teacher Appreciation Week</div>
+  <div class="legend-item"><div class="swatch" style="background:#FFD6F5;border-left:3px solid #E066BB"></div> User insight/nurturing</div>
+  <div class="legend-item"><div class="swatch" style="background:#FF91F0;border-left:3px solid #D966CC"></div> V3 Support Shirley</div>
+
+  <div class="footer">imagi Work &nbsp;·&nbsp; <a id="ghLink" href="#" target="_blank">Edit rules on GitHub</a></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
