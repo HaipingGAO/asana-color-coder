@@ -3,7 +3,7 @@
 // !! Replace the RULES_URL below with your actual GitHub raw URL !!
 // ================================================================
 
-const RULES_URL = 'https://raw.githubusercontent.com/HaipingGAO/asana-color-coder/refs/heads/main/asana-color-coder-v2/rules.json';
+const RULES_URL = 'https://https://raw.githubusercontent.com/HaipingGAO/asana-color-coder/refs/heads/main/rules.json';
 const UPDATE_INTERVAL_MS = 60 * 60 * 1000;
 
 let SWIM_LANE_COLORS = {};
