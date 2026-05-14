@@ -1,0 +1,12 @@
+{
+  "projects": [
+    { "name": "Others/Janitoring",         "bg": "#C8C8C8", "border": "#888888" },
+    { "name": "Platform 2.0 launch",       "bg": "#B09FE8", "border": "#7B6BC8" },
+    { "name": "RevOps 2026",               "bg": "#FFCA8A", "border": "#E07800" },
+    { "name": "Steph's Linkedin Webinar",  "bg": "#C8EEFF", "border": "#4A90D9" },
+    { "name": "Summer PD",                 "bg": "#FFFAC8", "border": "#D4A800" },
+    { "name": "Teacher Appreciation Week", "bg": "#A8EFCC", "border": "#28A745" },
+    { "name": "User insight/nurturing",    "bg": "#FFD6F5", "border": "#E066BB" },
+    { "name": "V3 Support Shirley",        "bg": "#FF91F0", "border": "#D966CC" }
+  ]
+}
