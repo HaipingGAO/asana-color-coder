@@ -4,7 +4,7 @@
 // ================================================================
 
 // !! REPLACE THIS URL with your own GitHub raw URL after uploading rules.js !!
-const RULES_URL = 'https://raw.githubusercontent.com/HaipingGAO/asana-color-coder/main/rules.js';
+const RULES_URL = 'https://raw.githubusercontent.com/HaipingGAO/asana-color-coder/refs/heads/main/rules.js';
 
 // How often to check GitHub for updates (in milliseconds)
 const UPDATE_INTERVAL_MS = 60 * 60 * 1000; // every 1 hour
