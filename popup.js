@@ -5,7 +5,7 @@ const statusText = document.getElementById('statusText');
 const ghLink = document.getElementById('ghLink');
 
 const GITHUB_REPO = 'https://github.com/HaipingGAO/asana-color-coder';
-const RULES_URL   = 'https://https://raw.githubusercontent.com/HaipingGAO/asana-color-coder/refs/heads/main/rules.json';
+const RULES_URL   = 'https://raw.githubusercontent.com/HaipingGAO/asana-color-coder/refs/heads/main/rules.json';
 ghLink.href = GITHUB_REPO + '/edit/main/rules.js';
 
 // Restore toggle state
